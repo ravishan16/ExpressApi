@@ -1,0 +1,42 @@
+{
+  "name": "express-api",
+  "version": "1.0.1",
+  "description": "Express NoneJS API using Express",
+  "main": "lambda.js",
+  "scripts": {
+    "deploy": "claudia create --policies policies --handler lambda.handler --deploy-proxy-api --region us-east-1",
+    "update": "claudia update",
+    "destroy": "claudia destroy --config claudia.json",
+    "generate-proxy": "claudia generate-serverless-express-proxy --express-module app",
+    "local": "node app.local.js",
+    "create-db": "node scripts/createDB.js"
+  },
+  "keywords": [
+    "aws",
+    "dynamodb",
+    "express",
+    "serverless",
+    "nodejs",
+    "rest",
+    "api"
+  ],
+  "author": "Ravishankar Sivasubramaniam",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.97.0",
+    "aws-serverless-express": "^3.0.2",
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "claudia": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}
