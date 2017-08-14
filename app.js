@@ -19,8 +19,4 @@ const product_router = require('./api/product')
 
 app.use('/products', product_router)
 
-// app.use('/', function(req,res){
-// 	res.send('Welcome to my AWS API!');
-// });
-
 module.exports = app // export your app so aws-serverless-express can use it

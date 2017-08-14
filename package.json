@@ -1,6 +1,6 @@
 {
   "name": "express-api",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Express NoneJS API using Express",
   "main": "lambda.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "serverless",
     "nodejs",
     "rest",
-    "api"
+    "api",
+    "ClaudiaJS",
+    "lambda",
+    "apigateway"
   ],
   "author": "Ravishankar Sivasubramaniam",
   "license": "MIT",
@@ -37,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "git://github.com/ravishan16/ExpressApi.git"
   }
 }

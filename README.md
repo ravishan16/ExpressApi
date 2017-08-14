@@ -1,32 +1,34 @@
 ExpressApi
 ==========
 
-AWS Serverless Lambda REST API boilerplate using NODE.JS Express and Dynamodb
+A Boilerplate for AWS Serverless Lambda REST API boilerplate using NODE.JS Express and Dynamodb
 
 Boilerplate Node.JS REST API project using Express and DynamoDB. Deployment using ClaudiaJS and dev local using gulp
 
-Git Clone
----------
+Getting Started
+---------------
+
+The easiest way to get started is to clone the repository:
+
+### Get the latest snapshot
 
 ```shell
-git clone git@github.com:ravishan16/ExpressApi.git
-cd ExpressApi
+git clone --depth=1 git@github.com:ravishan16/ExpressApi.git myproject
+cd myproject
 ```
 
-Setting up Dev Enviroment
--------------------------
+### Install NPM dependencies
 
 ```shell
 npm install
-npm install gulp -D
 ```
 
-Run App Local
--------------
+Start App Local
+===============
 
-execute gulp. This invokes app.local.js under scripts
+Execute gulp. This invokes app.local.js under scripts. gulp-nodemon Automatically restart Node.js server on code changes.
 
-```shell
+```
 gulp
 ```
 
@@ -41,7 +43,11 @@ npm run create-db
 
 ### Express App deployment in AWS
 
-1.	Configuring awscli
+1.	Configure awscli
+2.	Deploy App to AWS
+3.	Push changes to AWS
+
+### Configure awscli
 
 ```shell
 pip install awscli
@@ -52,7 +58,7 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 ```
 
-1.	Deploy App to AWS
+### Deploy App to AWS
 
 Use deploy for first time deployment. deploy is defined as npm run task in package.json script
 
@@ -62,7 +68,7 @@ claudia create --policies policies --handler lambda.handler --deploy-proxy-api -
 npm run deploy
 ```
 
-1.	Update App
+### Push changes to AWS
 
 Use update for update to initial deployment. update is defined as npm run task in package.json script
 
