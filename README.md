@@ -16,7 +16,7 @@ Amazon DynamoDB is a fully managed and hosted AWS NoSQL database service.
 
 Claudia.js is an open source Node.js deployment tool that helps automated deployment of Node.js app in a server-less way to AWS Lambda and AWS API Gateway.
 
-![Architecture ](docs/Architecture.png)
+![Architecture ](documents/Architecture.png)
 
 -	[Express](https://expressjs.com/en/4x/api.html)
 -	[Claudia.js](https://claudiajs.com/tutorials/serverless-express.html)
