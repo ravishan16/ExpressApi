@@ -42,6 +42,12 @@ cd myproject
 npm install
 ```
 
+To Install Gulp commandline run
+
+```shell
+sudo npm install -g gulp
+```
+
 Start App Local
 ===============
 
